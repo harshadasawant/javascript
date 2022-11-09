@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <!-- external -->
+    <script src="index.js"></script>
+ <!--internal
+         <script>
+        console.log("hello world");
+    </script>  -->
+</head>
+<body>
+    <p id="pid"> First text</p>
+    <button type="button" onclick="fun()" > change</button>
+    <script>
+        function fun(){
+            document.getElementById("pid").innerHTML="new text";
+        }
+
+        let name="William"; 
+       
+    console.log("Welcome to JS course, Mr."+name);  
+ 
+  name = "Goth"; /* This will throw an error because the identifier  'name' has been already declared and we are redeclaring the variable, which is not allowed using the 'let' keyword. */ 
+console.log("Welcome to JS course, Mr."+name); 
+
+const pi = 3.14;  
+console.log("The value of Pi is: "+pi);  
+  
+// pi = 3.141592; /* This will throw an error because the assignment to a const needs to be done at the time of declaration and it cannot be re-initialized. */ 
+console.log("The value of Pi is: "+pi); 
+
+var name1 = "William";  
+console.log("Welcome to JS course, Mr." + name1);  
+var name1 = "Goth"; /* Here, even though we have redeclared the same identifier, it will not throw any error.*/ 
+console.log("Welcome to JS course, Mr." + name1); 
+
+{
+    const ab=9;
+}
+console.log(ab);
+
+
+
+    </script>
+       <!--inline
+         <script>
+        console.log("hello world");
+    </script>  -->
+
+   
+</body>
+</html>
