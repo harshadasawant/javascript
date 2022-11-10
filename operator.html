@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(!(10 > 20)); //true 
+        console.log((10 > 5) && (20 > 20)); //false 
+        console.log((10 > 5) || (20 > 20)); //true 
+        console.log(typeof "JavaScript World"); //string 
+        console.log(typeof 10.5); // number 
+        console.log(typeof 10 > 20);//boolean 
+        console.log(typeof undefined); //undefined 
+        console.log(typeof null) //Object 
+        console.log(typeof {itemPrice : 500}) //Object 
+
+
+
+      
+        for (var loop = 0; loop < 5; loop++) { 
+            console.log(loop);
+            if (loop == 3) {
+                break; 
+        console.log("after break");
+        }
+        } 
+        console.log("out of loop");
+
+var counter =0;
+        for (var loop = 0; loop < 5; loop++) { 
+            console.log(loop);
+            if (loop == 3) {
+                 continue; 
+                 
+                 console.log("after continue");
+        }
+        console.log("loop = "+loop);
+           counter++
+        } 
+        console.log("counter="+counter);
+
+    </script>
+</body>
+</html>
