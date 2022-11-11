@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = 100;
+        let num2 = 2;
+        try {
+            if (isNaN(num1) || isNaN(num2)) {
+                throw "Not a number"
+            }
+            else {
+                if (num2 == 0) {
+                    throw "Divide by zero error";
+                }
+                else {
+                    let result = num1 / num2;
+                    console.log(result);
+                }
+            }
+        }
+        catch (e) {
+            console.log("Error: " + e);
+        } finally {
+            console.log("Some error occured");
+        }
+
+
+        let myCar = {
+    name: "Fiat",
+    model: "VXI",
+    color: "red",
+    numberOfGears: 5,
+    currentGear: 3,
+    currentSpeed: 45,
+    //-------------Behaviour of the object---------
+    accelerate: function (speedCounter) {
+        this.currentSpeed = this.currentSpeed + speedCounter;
+        return this.currentSpeed;
+    },
+
+    brake: function (speedCounter) {
+        this.currentSpeed = this.currentSpeed - speedCounter;
+        return this.currentSpeed;
+    }
+}
+
+console.log(myCar.name);    //return "Fiat" 
+console.log(myCar.currentSpeed);     //returns 45 
+console.log(myCar["name"]);     //return "Fiat" 
+console.log(myCar["currentSpeed"]);     //returns 45 
+console.log(myCar.accelerate(50));//invokes accelerate() with argument = 50  return 95
+console.log(myCar["name"]);     //return "Fiat" 
+console.log(myCar["currentSpeed"]);     //returns 95 
+console.log(myCar["accelerate"](50));    //invokes accelerate() with argument = 50 return 145
+
+
+abc="age";
+let personalDetails = {
+    name: "Stian Kirkeberg",
+    country: "Norway",
+    [abc]:50
+};
+
+console.log(personalDetails.age);  //Output: 45 
+
+
+
+
+
+    </script>
+</body>
+</html>
