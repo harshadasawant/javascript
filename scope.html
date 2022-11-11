@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Global variable
+        var greet = "Hello JavaScript";
+        function message() {
+            // var greet = "Hello JavaScript";
+            //Global variable accessed inside the function
+           lastname="sawant";
+            console.log("Message from inside the function: " + greet+"  "+lastname);
+        }
+        message();
+        //Global variable accessed outside the function
+        console.log("Message from outside the function: " + greet+"  "+lastname);
+        //Message from inside the function: Hello JavaScript
+        //Message from outside the function: Hello JavaScript
+
+
+        function testVar() {
+            if (10 == 10) {
+                var flag = "true";
+            }
+            console.log(flag); //true
+        }
+        testVar();
+
+
+        let firstName="Mark";
+        console.log("First name: "+firstName); //First name: undefined
+        // let firstName = "Mark";
+
+        function executeMe1() {
+            document.write("Function timeout !!!" + "<br><br>");
+        }
+        setTimeout(executeMe1, 8000);
+
+        function executeMe2() {
+            //execute();
+            document.write("Function called at regular interval !!!" + "<br><br>");
+        }
+        setInterval(executeMe2, 3000);
+
+
+
+    </script>
+</body>
+</html>
