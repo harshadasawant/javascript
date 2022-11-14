@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+
+
+
+
+
     <script>
 
 let dateObject1 = new Date(); 
@@ -66,6 +71,35 @@ console.log("Substr using 2 parameters: "+myString1.substr(2,5)); 
 console.log("Substr using 1 parameter: "+myString1.substr(5)); 
 
 
+console.log("Lower case: "+myString1.toLowerCase()); 
+console.log("Upper case: "+myString1.toUpperCase()); 
+
+console.log(Math.SQRT2);
+console.log(Math.PI);
+
+console.log(Math.max(10,20,20.4,20.6,30.5)); 
+console.log(Math.min(10,20,20.4,20.6,30.5)); 
+console.log(Math.ceil(20.5)); 
+console.log(Math.floor(20.5)); 
+console.log(Math.round(Math.random()*50)); 
+console.log(Math.sqrt(9)); 
+
+let stringJSON = '{"firstName":"Sam","lastName":"Fernandes"}' 
+let obj = JSON.parse(stringJSON); 
+console.log(obj); 
+
+let dataJSON = { firstName: "Sam", lastName: "Fernandes" }; 
+let obj1 = JSON.stringify(dataJSON); 
+console.log(obj1); 
+
+
+function func(){
+    alert(document.getElementById("p1"));
+//Selects paragraph having id 'p1'
+document.getElementById("p1").innerHTML="This is dynamically generated" ;
+    }
     </script>
+<p id="p1" onclick="func()"> Paragraph 1</p> 
+<p> Paragraph 2</p> 
 </body>
 </html>
